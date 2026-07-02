@@ -21,7 +21,4 @@ services:
         sync: false
       - key: CHROMA_PERSIST_DIR
         value: /data/chroma_db
-    disk:
-      name: chroma-data
-      mountPath: /data
-      sizeGB: 1
+
