@@ -27,7 +27,11 @@ class Settings(BaseSettings):
     PORT: int = 8000
 
     # CORS configuration
-    BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:5173"]
+    BACKEND_CORS_ORIGINS: List[str] = [
+        "http://localhost:5173",
+        "https://rag-placement-copilot-ebon.vercel.app"
+    ]
+
 
     # PostgreSQL Database configuration
     DATABASE_URL: Optional[str] = None
